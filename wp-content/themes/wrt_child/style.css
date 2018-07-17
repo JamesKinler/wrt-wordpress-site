@@ -1,0 +1,2632 @@
+/*
+Theme Name: wrt_child
+Theme URL: jcsmarketinginc.com
+Description: Wrt Child Theme
+Author: James Kinler
+Author: URI: jcsmarketinginc.com
+Template: wrt
+Version: 0.1.0
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li, a,
+fieldset, form, label, legend,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  text-decoration: none;
+  list-style-type: none; }
+
+.side-nav {
+  padding: 60px 0;
+}
+img.logo-brand {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    bottom: 75px;
+}
+
+nav ul a:hover{
+  background: transparent;
+}
+
+.nf-form-fields-required {
+    display: none;
+}
+
+.submit-button{
+  background-color: #00c853;
+  border: none;
+  color: white;
+  font-family: "proxima-nova", sans-serif;
+  padding: 10px 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+/*#nf-field-14 {
+  background-color: #00c853;
+  border: none;
+  color: white;
+  font-family: "proxima-nova", sans-serif;
+  padding: 10px 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}*/
+
+.hero_image {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5))), url("./img/blossom_home_page_background.png");
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)), url("./img/blossom_home_page_background.png");
+  background: -o-linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)), url("./img/blossom_home_page_background.png");
+  background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)), url("./img/blossom_home_page_background.png");
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed; }
+  .hero_image nav {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 70px 120px; }
+    .hero_image nav ul li a {
+      color: #565656;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-family: "proxima-nova", sans-serif;
+      font-style: normal;
+      font-weight: 600; }
+      .hero_image nav ul li a:hover {
+        background-color: transparent; }
+  .hero_image h1 {
+    color: white;
+    text-transform: uppercase;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    padding: 300px 0; }
+  .hero_image .scroll a {
+    position: absolute;
+    bottom: 150px;
+    left: 45%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 19px;
+    letter-spacing: .1em;
+    text-decoration: none;
+    -webkit-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s;
+    text-transform: uppercase; }
+    .hero_image .scroll a span {
+      position: absolute;
+      top: 14px;
+      left: 44%;
+      width: 28px;
+      height: 28px;
+      margin-left: -12px;
+      border-left: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-animation: sdb05 1.5s infinite;
+      animation: sdb05 1.5s infinite;
+      box-sizing: border-box; }
+
+@-webkit-keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0; } }
+
+@keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0; } }
+
+#sidenav-overlay {
+  z-index: 0; }
+
+/* info first section */
+.info {
+  padding: 95px 130px; }
+  .info h2 {
+    color: #000;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 20px 0; }
+  .info p {
+    color: #a3a3a3;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "proxima-nova", sans-serif;
+    text-align: left;
+    padding: 0 35px;
+    line-height: 1.7; }
+
+hr {
+  margin: 0 382px;
+  border: .5px solid #dedbdb; }
+
+/* repair renew section */
+.repair_container {
+  padding: 115px 170px; }
+  .repair_container .repair_background {
+    position: relative;
+    padding: 60px 70px; }
+    .repair_container .repair_background img {
+      display: block;
+      position: absolute;
+      z-index: -9999;
+      height: 472px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+    .repair_container .repair_background h2 {
+      color: #fff;
+      font-size: 33px;
+      font-weight: 500;
+      font-family: "proxima-nova", sans-serif;
+      line-height: 1.2; }
+    .repair_container .repair_background p {
+      color: #fff;
+      font-family: "proxima-nova", sans-serif;
+      font-size: 15px;
+      line-height: 2;
+      margin-bottom: 20px; }
+    .repair_container .repair_background a {
+      color: #fff;
+      border: 1px solid;
+      font-size: 17px;
+      font-family: "proxima-nova", sans-serif;
+      padding: 10px; }
+  .repair_container .soil {
+    position: relative; }
+    .repair_container .soil img {
+      display: block;
+      position: absolute;
+      z-index: -9999;
+      height: 472px;
+      width: 100%;
+      margin-left: 50px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+
+/* clean air section */
+.clean_clear {
+  margin-top: 120px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5))), url("./img/Home_Page_Services_Banner.jpg");
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)),  url("./img/Home_Page_Services_Banner.jpg");
+  background: -o-linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)),  url("./img/Home_Page_Services_Banner.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)),  url("./img/Home_Page_Services_Banner.jpg");
+  background-size: cover;
+  height: 600px;
+  background-attachment: fixed; }
+  .clean_clear h2 {
+    color: #fff;
+    font-family: "proxima-nova", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 80px;
+    padding-top: 200px; }
+  .clean_clear p {
+    color: #fff;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 23px;
+    font-weight: 300;
+    padding-bottom: 90px; }
+  .clean_clear .services {
+    background-color: #00c853;
+    border: none;
+    color: white;
+    padding: 20px 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 30px; }
+
+/* footer section */
+footer {
+  background-color: #0d47a1;
+  height: 750px; }
+  footer .footer_hr {
+    border-top: 1px solid white;
+    margin: 0px 0px 60px 0px; }
+  footer .footer_container {
+    padding: 130px 80px 80px 80px; }
+    footer .footer_container .contact_info {
+      padding-bottom: 40px; }
+      footer .footer_container .contact_info h2 {
+        color: #fff;
+        font-size: 45px;
+        font-weight: 600;
+        font-family: "proxima-nova", sans-serif;
+        text-transform: uppercase; }
+      footer .footer_container .contact_info p {
+        color: #fff;
+        font-size: 17px;
+        font-weight: 300;
+        font-family: "proxima-nova", sans-serif;
+        padding: 3px 0; }
+        footer .footer_container .contact_info p strong {
+          font-weight: 700; }
+    footer .footer_container .contact {
+      color: #fff;
+      font-size: 18px;
+      font-family: "proxima-nova", sans-serif;
+      text-transform: uppercase;
+      font-weight: 500;
+      border: 1px solid #fff;
+      padding: 20px; }
+  footer .logo_footer img {
+    width: 140px;
+    height: 140px; }
+  footer .logo_footer ul li a {
+    color: #fff;
+    font-family: "proxima-nova", sans-serif; }
+  footer .copyright {
+    color: #fff;
+    font-size: 13px;
+    padding: 30px 0;
+    text-align: center; }
+
+/* about nav styles */
+.about_hero_image {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5))), url("./img/about_us_header.jpg");
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)), url("./img/about_us_header.jpg");
+  background: -o-linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)), url("./img/about_us_header.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)), url("./img/about_us_header.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed; }
+  .about_hero_image nav {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 70px 120px; }
+    .about_hero_image nav ul li a {
+      color: #565656;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-family: "proxima-nova", sans-serif;
+      font-style: normal;
+      font-weight: 600; }
+  .about_hero_image h1 {
+    color: white;
+    text-transform: uppercase;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    padding: 300px 0; }
+  .about_hero_image .scroll a {
+    position: absolute;
+    bottom: 150px;
+    left: 45%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 19px;
+    letter-spacing: .1em;
+    text-decoration: none;
+    -webkit-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s;
+    text-transform: uppercase; }
+    .about_hero_image .scroll a span {
+      position: absolute;
+      top: 14px;
+      left: 44%;
+      width: 28px;
+      height: 28px;
+      margin-left: -12px;
+      border-left: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-animation: sdb05 1.5s infinite;
+      animation: sdb05 1.5s infinite;
+      box-sizing: border-box; }
+
+@keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0; } }
+
+/* about us and team bio styles */
+.about_us {
+  padding: 165px 170px 40px 170px; }
+  .about_us .about_us_blue_square {
+    background: url("./img/blue_square.png");
+    height: 610px;
+    padding: 30px 80px; }
+    .about_us .about_us_blue_square h2 {
+      color: #fff;
+      font-family: "proxima-nova", sans-serif;
+      font-size: 35px;
+      font-weight: 500;
+      line-height: 2; }
+    .about_us .about_us_blue_square p {
+      color: #fff;
+      font-family: "proxima-nova", sans-serif;
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 1.7; }
+  .about_us .about_us_team h2 {
+    color: #a3a3a3;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 25px; }
+  .about_us .about_us_team p {
+    color: #a3a3a3;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    padding-bottom: 45px;
+    line-height: 1.7; }
+
+/* logo contact info section */
+.logo_contactinfo {
+  padding: 115px 170px; }
+  .logo_contactinfo img {
+    height: 150px;
+    width: 270px;
+    margin-left: 195px; }
+  .logo_contactinfo .logo_contactinfo_par {
+    padding-top: 60px; }
+    .logo_contactinfo .logo_contactinfo_par p {
+      color: #a3a3a3;
+      font-family: "proxima-nova", sans-serif;
+      font-size: 20px;
+      font-weight: 400; }
+
+/* Meet our customers section */
+.meet_customers {
+  background: url("./img/blue_square.png");
+  width: 100%;
+  height: 400px;
+  padding: 90px 0px; }
+  .meet_customers h2 {
+    color: #fff;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 76px;
+    font-weight: 800;
+    line-height: .9; }
+  .meet_customers p {
+    color: #fff;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    padding-top: 13px; }
+
+/*customers photo section */
+.customers {
+  padding: 110px 200px; }
+  .customers img {
+    width: 230px;
+    height: 230px;
+    padding: 10px 0; }
+
+/* Join the family section */
+.join_the_family {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5))), url("./img/almond_on_wood.jpg");
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)), url("./img/almond_on_wood.jpg");
+  background: -o-linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)), url("./img/almond_on_wood.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)), url("./img/almond_on_wood.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px; }
+  .join_the_family .h2_padding_top {
+    padding-top: 150px; }
+  .join_the_family h2 {
+    color: #fff;
+    font-family: "proxima-nova", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: .7;
+    padding-bottom: 35px; }
+  .join_the_family .catalog {
+    background-color: #00c853;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 30px; }
+
+/* product nav styles */
+.product_hero_image {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5))), url("./img/products_vineyard.jpg");
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)), url("./img/products_vineyard.jpg");
+  background: -o-linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)), url("./img/products_vineyard.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)), url("./img/products_vineyard.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed; }
+  .product_hero_image nav {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 70px 120px; }
+    .product_hero_image nav ul li a {
+      color: #565656;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-family: "proxima-nova", sans-serif;
+      font-style: normal;
+      font-weight: 600; }
+  .product_hero_image h1 {
+    color: white;
+    text-transform: uppercase;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    padding: 300px 0 100px 0;
+    margin: 0 624px; }
+  .product_hero_image .baicor-button {
+    background-color: #00c853;
+    border: none;
+    color: white;
+    font-family: "proxima-nova", sans-serif;
+    padding: 15px 26px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 70px 30px 0 0;
+    letter-spacing: 4px; }
+  .product_hero_image .bio_si-button {
+    background-color: #00c853;
+    border: none;
+    color: white;
+    font-family: "proxima-nova", sans-serif;
+    padding: 15px 26px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 70px; }
+  .product_hero_image .scroll a {
+    position: absolute;
+    bottom: 150px;
+    left: 45%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 19px;
+    letter-spacing: .1em;
+    text-decoration: none;
+    -webkit-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s;
+    text-transform: uppercase; }
+    .product_hero_image .scroll a span {
+      position: absolute;
+      top: 14px;
+      left: 44%;
+      width: 28px;
+      height: 28px;
+      margin-left: -12px;
+      border-left: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-animation: sdb05 1.5s infinite;
+      animation: sdb05 1.5s infinite;
+      box-sizing: border-box; }
+
+@keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0; } }
+
+/* bio Logo section */
+.bio_logo {
+  padding: 165px 0px 40px 0px; }
+  .bio_logo img {
+    padding: 30px 0; }
+
+.baicor {
+  background: url("./img/Blue_Square.png");
+  padding: 100px 0; }
+  .baicor h2 {
+    color: #fff;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 80px;
+    font-weight: 700; }
+
+.baicor_info {
+  padding: 100px 500px; }
+  .baicor_info p {
+    color: #a3a3a3;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2;
+    padding: 10px 0; }
+    .baicor_info p strong {
+      font-weight: 800;
+      font-size: 16px; }
+  .baicor_info .baicorlc_logo {
+    padding: 90px 330px 0 330px; }
+  .baicor_info .products_hr {
+    margin: 40px 0 0 0; }
+
+.products_list {
+  padding: 70px 300px 200px 300px; }
+  .products_list h2 {
+    color: #000;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    padding: 30px 0; }
+  .products_list ul li a {
+    color: #a3a3a3;
+    line-height: 2;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 600; }
+
+.bio_si {
+  background: url("./img/Blue_Square.png");
+  padding: 100px 0; }
+  .bio_si h2 {
+    color: #fff;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 80px;
+    font-weight: 700; }
+
+.bio_si_info {
+  padding: 100px 500px 20px 500px; }
+  .bio_si_info p {
+    color: #a3a3a3;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2;
+    padding: 10px 0; }
+    .bio_si_info p strong {
+      font-weight: 800;
+      font-size: 16p; }
+  .bio_si_info .biologo {
+    padding: 90px 330px 0 330px; }
+  .bio_si_info .bio_hr {
+    margin: 40px 0 0 0; }
+
+.bio_info {
+  padding: 0px 300px 80px 300px; }
+  .bio_info h2 {
+    color: #000;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    padding: 30px 0; }
+  .bio_info ul li a {
+    color: #a3a3a3;
+    line-height: 2;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 600; }
+
+  .crop_bottom_hr {
+    margin: 0 200px;
+    border: .5px solid #dedbdb;
+  }
+
+.logo_hr {
+  margin: 0 0px; }
+
+.call_contact {
+  padding: 50px 0 150px 0; }
+  .call_contact p {
+    color: #000;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 2;
+    padding-bottom: 70px; }
+  .call_contact .contactus_button {
+    background-color: #00c853;
+    border: none;
+    color: white;
+    padding: 15px 26px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0px 100px 0px;
+    letter-spacing: 4px; }
+
+/* services nav section */
+.services_hero_image {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5))), url("./img/services_header.jpg");
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)), url("./img/services_header.jpg");
+  background: -o-linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)), url("./img/services_header.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)), url("./img/services_header.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  background-attachment: fixed; }
+  .services_hero_image nav {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 70px 120px; }
+    .services_hero_image nav ul li a {
+      color: #565656;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-family: "proxima-nova", sans-serif;
+      font-style: normal;
+      font-weight: 600; }
+  .services_hero_image h1 {
+    color: white;
+    text-transform: uppercase;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    padding-top: 450px;
+    margin: 0 624px; }
+  .services_hero_image .scroll a {
+    position: absolute;
+    bottom: 150px;
+    left: 45%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 19px;
+    letter-spacing: .1em;
+    text-decoration: none;
+    -webkit-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s;
+    text-transform: uppercase; }
+    .services_hero_image .scroll a span {
+      position: absolute;
+      top: 14px;
+      left: 44%;
+      width: 28px;
+      height: 28px;
+      margin-left: -12px;
+      border-left: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-animation: sdb05 1.5s infinite;
+      animation: sdb05 1.5s infinite;
+      box-sizing: border-box; }
+
+@keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0; } }
+
+/* services first section */
+.services_steps {
+  padding: 165px 170px 40px 170px; }
+  .services_steps h2 {
+    font-size: 25px;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 800;
+    line-height: 2; }
+  .services_steps p {
+    font-size: 15px;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 500;
+    line-height: 2;
+    margin: 0 40px;
+    color: #a3a3a3; }
+  .services_steps img.first_circle.responsive-img.circle {
+    height: 200px;
+    width: 210px; }
+  .services_steps img.second_circle.responsive-img.circle {
+    height: 200px;
+    width: 210px; }
+  .services_steps img.third_circle.responsive-img.circle {
+    height: 200px;
+    width: 210px; }
+  .services_steps .services_hr {
+    margin: 0px 35px 20px 35px; }
+  .services_steps .learn_more_h2 {
+    padding-bottom: 30px; }
+  .services_steps .services_contactus_button {
+    background-color: #00c853;
+    border: none;
+    color: white;
+    padding: 15px 26px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 40px; }
+
+/* ag lab section */
+.ag_laboratory_section {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5))), url("./img/mukang_labs_banner.jpg");
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)), url("./img/mukang_labs_banner.jpg");
+  background: -o-linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)), url("./img/mukang_labs_banner.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)), url("./img/mukang_labs_banner.jpg");
+  background-size: cover;
+  height: 500px;
+  background-attachment: fixed; }
+  .ag_laboratory_section h2 {
+    color: #fff;
+    font-family: "proxima-nova", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 70px;
+    padding-top: 200px;
+    margin: 0 500px; }
+  .ag_laboratory_section p {
+    color: #fff;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 20px;
+    font-weight: 300; }
+
+.ag_lab_info {
+  padding: 165px 300px 40px 300px;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2; }
+  .ag_lab_info p {
+    color: #a3a3a3;
+    font-size: 16px;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 300;
+    padding: 15px; }
+
+.ag_website_link {
+  padding-bottom: 100px; }
+  .ag_website_link h2 {
+    font-size: 30px;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 700;
+    padding: 50px 0; }
+  .ag_website_link .visit_button {
+    background-color: #00c853;
+    border: none;
+    color: white;
+    padding: 15px 26px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0px 100px 0px;
+    letter-spacing: 4px; }
+
+/* news nav styles */
+.news_hero_image {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5))), url("./img/news_header.jpg");
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)), url("./img/news_header.jpg");
+  background: -o-linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)), url("./img/news_header.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)), url("./img/news_header.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed; }
+  .news_hero_image nav {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 70px 120px; }
+    .news_hero_image nav ul li a {
+      color: #565656;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-family: "proxima-nova", sans-serif;
+      font-style: normal;
+      font-weight: 600; }
+  .news_hero_image h1 {
+    color: white;
+    text-transform: uppercase;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    padding: 400px 460px 200px 460px; }
+  .news_hero_image .scroll a {
+    position: absolute;
+    bottom: 150px;
+    left: 45%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 19px;
+    letter-spacing: .1em;
+    text-decoration: none;
+    -webkit-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s;
+    text-transform: uppercase; }
+    .news_hero_image .scroll a span {
+      position: absolute;
+      top: 14px;
+      left: 44%;
+      width: 28px;
+      height: 28px;
+      margin-left: -12px;
+      border-left: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-animation: sdb05 1.5s infinite;
+      animation: sdb05 1.5s infinite;
+      box-sizing: border-box; }
+
+@keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0; } }
+
+/* first news section */
+.news {
+  padding: 165px 170px 40px 170px; }
+  .news p {
+    color: #a3a3a3;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 16px;
+    line-height: 1.9;
+    font-weight: 500;
+    padding: 0 60px 70px 60px;
+    text-align: center; }
+  .news .news_media {
+    background-color: #00c853;
+    border: none;
+    color: white;
+    padding: 15px 26px;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 20px 40px 100px 0px;
+    letter-spacing: 4px; }
+  .news .calendar {
+    background-color: #00c853;
+    border: none;
+    color: white;
+    padding: 15px 26px;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 20px 40px 100px 0px;
+    letter-spacing: 4px; }
+  .news .news_hr {
+    margin: 70px 60px 0 60px; }
+
+/* News Banner */
+.news_banner {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5))), url("./img/arial_view_farmland.jpg");
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)), url("./img/arial_view_farmland.jpg");
+  background: -o-linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)), url("./img/arial_view_farmland.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)), url("./img/arial_view_farmland.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 600px; }
+  .news_banner h2 {
+    color: #fff;
+    font-family: "proxima-nova", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 40px;
+    font-size: 80px;
+    padding-top: 200px; }
+  .news_banner p {
+    color: #fff;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 23px;
+    font-weight: 300; }
+
+.news_blog {
+  padding: 165px 170px 40px 170px; }
+  .news_blog .cover_image {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px; }
+  .news_blog .cover_image img {
+    height: 174px;
+    }
+    .news_blog .cover_image .overlay {
+      position: absolute;
+      background-color: #000;
+      opacity: .5;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0; }
+    .news_blog .cover_image .blog_info {
+      position: absolute;
+      color: #fff;
+      font-family: "proxima-nova", sans-serif;
+      bottom: 36px;
+      left: 25px; }
+      .news_blog .cover_image .blog_info .blog_title {
+        font-size: 17px;
+        font-weight: 700; }
+      .news_blog .cover_image .blog_info .blog_date {
+        font-size: 13px;
+        font-weight: 300; }
+  .news_blog .blog_more_content {
+    color: #000;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 40px; }
+  .news_blog .blog_browse {
+    background-color: #00c853;
+    border: none;
+    color: white;
+    padding: 15px 26px;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 0px 500px 100px 500px;
+    letter-spacing: 4px; }
+
+/*upcoming events */
+.upcoming_events {
+  background: url("./img/Blue_Square.png");
+  width: 100%;
+  height: 400px;
+  padding: 155px 0px; }
+  .upcoming_events h2 {
+    color: #fff;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 76px;
+    font-weight: 800;
+    line-height: .9; }
+  .upcoming_events p {
+    color: #fff;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    padding-top: 13px; }
+
+/* events blog */
+.events_blog {
+  padding: 165px 170px 110px 170px; }
+  .events_blog .cover_image {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .events_blog .overlay {
+    position: absolute;
+    background-color: #000;
+    opacity: .5;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; }
+  .events_blog a{
+    color: #fff;
+  }
+
+  .events_blog .cover_image img {
+    height: 174px;
+    }
+  .events_blog .event_info {
+    position: absolute;
+    color: #fff;
+    font-family: "proxima-nova", sans-serif;
+    bottom: 36px;
+    left: 25px; }
+    .events_blog .event_info .event_title {
+      font-size: 17px;
+      font-weight: 700; }
+    .events_blog .event_info .event_date {
+      font-size: 13px;
+      font-weight: 300; }
+  .events_blog .full_line_up {
+    color: #000;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 40px; }
+  .events_blog .event_calendar_button {
+    background-color: #00c853;
+    border: none;
+    color: white;
+    padding: 15px 26px;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 0px 500px 100px 478px;
+    letter-spacing: 4px; }
+
+/* contact us nav section */
+.contactus_hero_image {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5))), url("./img/wave_background.png");
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)), url("./img/wave_background.png");
+  background: -o-linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)), url("./img/wave_background.png");
+  background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)), url("./img/wave_background.png");
+  width: 100%;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-position: top center; }
+  .contactus_hero_image nav {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 70px 120px; }
+    .contactus_hero_image nav ul li a {
+      color: #565656;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-family: "proxima-nova", sans-serif;
+      font-style: normal;
+      font-weight: 600; }
+  .contactus_hero_image h1 {
+    color: white;
+    text-transform: uppercase;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+    padding: 320px 0 40px 0;
+    margin: 0 500px; }
+  .contactus_hero_image .contactme {
+    background-color: #00c853;
+    border: none;
+    color: white;
+    padding: 15px 26px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 70px 30px 0 382px;
+    letter-spacing: 4px;
+    font-family: "proxima-nova", sans-serif; }
+  .contactus_hero_image p {
+    color: #fff;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 30px;
+    font-weight: 500; }
+
+/* contact us info section */
+.contactus_info_section {
+  padding: 165px 0px 40px 0px; }
+  .contactus_info_section h2 {
+    color: #000;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 0 615px 40px 615px; }
+  .contactus_info_section .contactus_para {
+    padding: 0 619px 40px 619px;
+    color: #a3a3a3;
+    font-weight: 500;
+    line-height: 1.8; }
+  .contactus_info_section .padding {
+    padding: 0 295px; }
+  .contactus_info_section .joseph_section {
+    padding: 15px 0;
+    font-family: "proxima-nova", sans-serif; }
+    .contactus_info_section .joseph_section .name {
+      font-size: 16px;
+      color: #a3a3a3;
+      font-weight: 600; }
+    .contactus_info_section .joseph_section .phone {
+      font-size: 16px;
+      color: #a3a3a3;
+      font-weight: 400; }
+    .contactus_info_section .joseph_section .email {
+      color: #69f0ae;
+      font-size: 16px;
+      font-weight: 400; }
+  .contactus_info_section .tim_section {
+    padding: 15px 0;
+    font-family: "proxima-nova", sans-serif; }
+    .contactus_info_section .tim_section .name {
+      font-size: 16px;
+      color: #a3a3a3;
+      font-weight: 600; }
+    .contactus_info_section .tim_section .phone {
+      font-size: 16px;
+      color: #a3a3a3;
+      font-weight: 400; }
+    .contactus_info_section .tim_section .email {
+      color: #69f0ae;
+      font-size: 16px;
+      font-weight: 400; }
+  .contactus_info_section .spencer_section {
+    padding: 15px 0;
+    font-family: "proxima-nova", sans-serif; }
+    .contactus_info_section .spencer_section .name {
+      font-size: 16px;
+      color: #a3a3a3;
+      font-weight: 600; }
+    .contactus_info_section .spencer_section .phone {
+      font-size: 16px;
+      color: #a3a3a3;
+      font-weight: 400; }
+    .contactus_info_section .spencer_section .email {
+      color: #69f0ae;
+      font-size: 16px;
+      font-weight: 400; }
+  .contactus_info_section .sara_section {
+    padding: 15px 0;
+    font-family: "proxima-nova", sans-serif; }
+    .contactus_info_section .sara_section .name {
+      font-size: 16px;
+      color: #a3a3a3;
+      font-weight: 600; }
+    .contactus_info_section .sara_section .phone {
+      font-size: 16px;
+      color: #a3a3a3;
+      font-weight: 400; }
+    .contactus_info_section .sara_section .email {
+      color: #69f0ae;
+      font-size: 16px;
+      font-weight: 400; }
+  .contactus_info_section .silvano_section {
+    padding: 15px 0;
+    font-family: "proxima-nova", sans-serif; }
+    .contactus_info_section .silvano_section .name {
+      font-size: 16px;
+      color: #a3a3a3;
+      font-weight: 600; }
+    .contactus_info_section .silvano_section .phone {
+      font-size: 16px;
+      color: #a3a3a3;
+      font-weight: 400; }
+    .contactus_info_section .silvano_section .email {
+      color: #69f0ae;
+      font-size: 16px;
+      font-weight: 400; }
+
+/* form styles */
+.contact_form {
+  padding-bottom: 90px; }
+  .contact_form h2 {
+    color: #000;
+    font-size: 25px;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 300;
+    padding: 60px 0; }
+  .contact_form .form {
+    margin: 0 250px; }
+
+/* customer services nav section */
+.customer_services_hero_image {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5))), url("./img/wave_background.png");
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)), url("./img/wave_background.png");
+  background: -o-linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)), url("./img/wave_background.png");
+  background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)), url("./img/wave_background.png");
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: top center;
+ }
+  .customer_services_hero_image nav {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 70px 120px; }
+    .customer_services_hero_image nav ul li a {
+      color: #565656;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-family: "proxima-nova", sans-serif;
+      font-style: normal;
+      font-weight: 600; }
+  .customer_services_hero_image h1 {
+    color: white;
+    text-transform: uppercase;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+    padding: 180px 0 40px 0;
+    margin: 0 500px; }
+  .customer_services_hero_image .contactme {
+    background-color: #00c853;
+    border: none;
+    color: white;
+    padding: 15px 26px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 70px 30px 0 382px;
+    letter-spacing: 4px;
+    font-family: "proxima-nova", sans-serif; }
+  .customer_services_hero_image p {
+    color: #fff;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 30px;
+    font-weight: 500; }
+
+/* customer services info */
+.customer_services_return {
+  padding: 110px 170px; }
+  .customer_services_return .customer_services_title {
+    color: #a3a3a3;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 800;
+    font-size: 15px; }
+  .customer_services_return .customer_services_info {
+    color: #a3a3a3;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 500;
+    line-height: 1.9;
+    font-size: 15px; }
+  .customer_services_return .customer_services_phone {
+    color: #a3a3a3;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 500;
+    font-size: 15px; }
+  .customer_services_return .customer_services_email {
+    color: #a3a3a3;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 500;
+    font-size: 15px; }
+    .customer_services_return .customer_services_email a {
+      color: #69f0ae; }
+  .customer_services_return hr {
+    margin: 57px 0px;
+    border: .5px solid #dedbdb; }
+
+.terms_of_use {
+  padding: 110px 170px; }
+  .terms_of_use .terms_use_title {
+    color: #a3a3a3;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 800;
+    font-size: 15px; }
+  .terms_of_use p {
+    color: #a3a3a3;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 500;
+    line-height: 1.9;
+    font-size: 15px;
+    padding: 20px 0; }
+  .terms_of_use ul li {
+    color: #a3a3a3;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 500;
+    line-height: 1.9;
+    font-size: 15px;
+    padding: 15px 0;
+    list-style-type: disc; }
+  .terms_of_use hr {
+    margin: 57px 0px;
+    border: .5px solid #dedbdb; }
+
+.privacy_services {
+  padding: 110px 170px; }
+  .privacy_services .privacy_info {
+    color: #a3a3a3;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 500;
+    line-height: 1.9;
+    font-size: 15px;
+    padding: 60px 240px; }
+  .privacy_services .privacy_title {
+    color: #a3a3a3;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 800;
+    font-size: 15px; }
+  .privacy_services p {
+    color: #a3a3a3;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 500;
+    line-height: 1.9;
+    font-size: 15px;
+    padding: 20px 0; }
+  .privacy_services hr {
+    margin: 57px 0px;
+    border: .5px solid #dedbdb; }
+  .privacy_services .first_hr {
+    margin: 57px 214px;
+    border: .5px solid #dedbdb; }
+
+/* calcium_12 nav section */
+.calcium_12_hero_image {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5))), url("./img/wave_background.png");
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)), url("./img/wave_background.png");
+  background: -o-linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)),  url("./img/wave_background.png");
+  background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)),  url("./img/wave_background.png");
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: top center; }
+  .calcium_12_hero_image nav {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 70px 120px; }
+    .calcium_12_hero_image nav ul li a {
+      color: #565656;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-family: "proxima-nova", sans-serif;
+      font-style: normal;
+      font-weight: 600; }
+  .calcium_12_hero_image h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+    padding: 180px 0 40px 0;
+    margin: 0 500px; }
+  .calcium_12_hero_image p {
+    color: #fff;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 30px;
+    font-weight: 500; }
+
+.calcium_12_section {
+  padding: 110px 170px; }
+  .calcium_12_section .calcium_12_title {
+    color: #a3a3a3;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 800;
+    font-size: 20px; }
+  .calcium_12_section ul li {
+    list-style-type: circle;
+    color: #a3a3a3;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 17px; }
+  .calcium_12_section p {
+    color: #a3a3a3;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 500;
+    line-height: 1.9;
+    font-size: 17px;
+    padding: 12px 0; }
+  .calcium_12_section a {
+    color: #69f0ae; }
+  .calcium_12_section .calcium_12_sub {
+    color: #a3a3a3;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 800; }
+  .calcium_12_section .cal_logo {
+    margin: 120px 350px;
+    height: 70px; }
+  .calcium_12_section hr {
+    margin: 0 0 80px 0; }
+  .calcium_12_section .return_cat {
+    background-color: #00c853;
+    border: none;
+    color: white;
+    padding: 20px 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0 430px; }
+
+/* calcium_A+ nav section */
+.calcium_A_hero_image {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5))), url("./img/wave_background.png");
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)),  url("./img/wave_background.png");
+  background: -o-linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)),  url("./img/wave_background.png");
+  background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)),  url("./img/wave_background.png");
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: top center; }
+  .calcium_A_hero_image nav {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 70px 120px; }
+    .calcium_A_hero_image nav ul li a {
+      color: #565656;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-family: "proxima-nova", sans-serif;
+      font-style: normal;
+      font-weight: 600; }
+  .calcium_A_hero_image h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+    padding: 180px 0 40px 0;
+    margin: 0 500px; }
+  .calcium_A_hero_image p {
+    color: #fff;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 30px;
+    font-weight: 500; }
+
+.calcium_A_section {
+  padding: 110px 170px; }
+  .calcium_A_section .calcium_A_title {
+    color: #a3a3a3;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 800;
+    font-size: 20px; }
+  .calcium_A_section p {
+    color: #a3a3a3;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 500;
+    line-height: 1.9;
+    font-size: 17px;
+    padding: 12px 0; }
+  .calcium_A_section a {
+    color: #69f0ae; }
+  .calcium_A_section .calcium_A_sub {
+    color: #a3a3a3;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 800; }
+  .calcium_A_section .cal_logo {
+    margin: 120px 450px;
+    height: 170px; }
+  .calcium_A_section hr {
+    margin: 0 0 80px 0; }
+  .calcium_A_section .return_cat {
+    background-color: #00c853;
+    border: none;
+    color: white;
+    padding: 20px 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0 430px; }
+/* news blog */
+.news_media_hero_image{
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5))), url("./img/farm_sprinkler.jpg");
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)),  url("./img/farm_sprinkler.jpg");
+  background: -o-linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)),  url("./img/farm_sprinkler.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)),  url("./img/farm_sprinkler.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+ }
+  .news_media_hero_image nav {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 70px 120px; }
+    .news_media_hero_image nav ul li a {
+      color: #565656;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-family: "proxima-nova", sans-serif;
+      font-style: normal;
+      font-weight: 600; }
+  .news_media_hero_image h1 {
+    color: white;
+    text-transform: uppercase;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    margin: 200px 460px 200px 460px; }
+
+/* events page */
+.events_hero_image{
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5))), url("./img/farm_sprinkler.jpg");
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)),  url("./img/farm_sprinkler.jpg");
+  background: -o-linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)),  url("./img/farm_sprinkler.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(11, 37, 9, 0.5)),  url("./img/farm_sprinkler.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+  .events_hero_image nav {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 70px 120px; }
+    .events_hero_image nav ul li a {
+      color: #565656;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-family: "proxima-nova", sans-serif;
+      font-style: normal;
+      font-weight: 600; }
+  .events_hero_image h1 {
+    color: white;
+    text-transform: uppercase;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    margin: 200px 460px 200px 460px; }
+
+    .header_blog nav {
+      background-color: transparent;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      padding: 70px 120px; }
+      .header_blog nav ul li a {
+        color: #565656;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-family: "proxima-nova", sans-serif;
+        font-style: normal;
+        font-weight: 600; }
+    .header_blog h1 {
+      color: white;
+      text-transform: uppercase;
+      font-family: "proxima-nova", sans-serif;
+      font-weight: 600;
+      font-size: 60px;
+          margin: 350px 460px 200px 460px; }
+    /*blog styles */
+    .blog_style{
+      padding: 100px 160px;
+    }
+    .blog_style p {
+      color: #a3a3a3;
+      font-family: "proxima-nova", sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+      padding-bottom: 9px;
+      line-height: 1.7;
+    }
+    .blog_style .publish{
+      font-weight: 500;
+    }
+    .blog_style .publish span{
+      margin-left: 30px;
+    }
+
+      .related_post .cover_image {
+        position: relative;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      .related_post .overlay {
+        position: absolute;
+        background-color: #000;
+        opacity: .5;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0; }
+
+      .related_post .cover_image img {
+        height: 174px;
+        }
+      .related_post .related_post_info {
+        position: absolute;
+        color: #fff;
+        font-family: "proxima-nova", sans-serif;
+        bottom: 36px;
+        left: 25px; }
+        .related_post .related_post_info .related_post_title {
+          font-size: 17px;
+          font-weight: 700; }
+        .related_post .related_post_info .related_post_date {
+          font-size: 13px;
+          font-weight: 300; }
+        .related_post .related_header{
+          color: #a3a3a3;
+          font-weight: 700;
+          padding-bottom: 30px;
+          font-size: 20px;
+        }
+        div#disqus_thread{
+          padding-bottom: 100px;
+        }
+
+
+
+
+
+
+
+/*media querry 1440px */
+@media screen and (max-width: 1440px) {
+  .col.l6.m6.s12.repair_background {
+    padding: 44px;
+}
+  .info {
+    padding: 95px 68px; }
+    .info p {
+      font-size: 14px; }
+  .repair_container .repair_background h2 {
+    font-size: 31px; }
+  .repair_container .repair_background p {
+    font-size: 14px;
+    line-height: 1.8;
+    /* about us page */ }
+  .about_us .about_us_blue_square {
+    height: 677px;
+    padding: 30px 57px; }
+  .about_us .about_us_blue_square p {
+    font-size: 14px;
+    line-height: 2; }
+  .logo_contactinfo img {
+    height: 118px;
+    width: 259px;
+    margin: 10px 94px; }
+  /* products page */
+  .product_hero_image h1 {
+    margin: 0 440px;
+    font-size: 50px;
+   }
+  .baicor_info {
+    padding: 100px 400px; }
+  .baicor_info .baicorlc_logo {
+    padding: 90px 200px 0 200px; }
+  .products_list {
+    padding: 70px 200px 200px 200px; }
+  .bio_si_info {
+    padding: 100px 300px 20px 300px; }
+  hr {
+    margin: 0px 300px; }
+  .crop_bottom_hr {
+    margin: 0 0; }
+  /* services page */
+  .services_hero_image h1 {
+    font-size: 50px;
+    margin: 0 450px; }
+  .services_steps h2 {
+    font-size: 17px;
+    line-height: 1.5; }
+  .services_steps p {
+    font-size: 14px;
+    line-height: 1.7; }
+  .services_steps img.first_circle.responsive-img.circle {
+    height: 170px;
+    width: 170px; }
+  .services_steps img.second_circle.responsive-img.circle {
+    height: 170px;
+    width: 170px; }
+  .services_steps img.third_circle.responsive-img.circle {
+    height: 170px;
+    width: 170px; }
+  .ag_laboratory_section h2 {
+    font-size: 50px; }
+  /* news page */
+  .news_hero_image h1 {
+    padding: 450px 0px; }
+  .news_blog {
+    padding: 165px 50px 40px 50px; }
+  .events_blog {
+    padding: 165px 50px 110px 50px; }
+  .blog_more_content {
+    text-align: left; }
+  .news_blog .blog_browse {
+    margin: 0px 400px 100px 400px; }
+  .events_blog .event_calendar_button {
+    margin: 0px 400px 100px 400px; }
+  /* Contact Us Page */
+  .contactus_hero_image h1 {
+    margin: 0 200px; }
+  .contactus_hero_image .contactme {
+    margin: 70px 0px 0 280px; }
+  .contactus_hero_image p {
+    font-size: 25px; }
+  .contactus_info_section .contactus_para {
+    padding: 0 400px 40px 400px; }
+  /* Calcium 12 */
+  .calcium_12_hero_image h1 {
+    font-size: 60px; }
+  .calcium_12_section .cal_logo {
+    margin: 120px 230px; }
+  .calcium_12_section .return_cat {
+    margin: 0 260px; }
+  /* Calcium A+ Page */
+  .calcium_A_hero_image h1 {
+    font-size: 60px; }
+  .calcium_A_section .cal_logo {
+    margin: 120px 300px; }
+  .calcium_A_section .return_cat {
+    margin: 0 260px; }
+  /* coustmer services page */
+  .customer_services_hero_image h1 {
+    font-size: 60px; }
+  /* Media Query 1030 */ }
+
+@media screen and (max-width: 1030px) {
+  .hero_image h1 {
+    padding: 400px 0 200px 0; }
+  .info h2 {
+    font-size: 18px; }
+  .info {
+    padding: 95px 38px; }
+  .info p {
+    font-size: 13px;
+    padding: 0px 15px; }
+  .repair_container {
+    padding: 100px 60px; }
+  .repair_container .repair_background p {
+    font-size: 13px; }
+  .clean_clear h2 {
+    font-size: 60px; }
+  hr {
+    margin: 0px 230px; }
+  footer .footer_container .contact_info h2 {
+    font-size: 25px; }
+  footer .footer_container .contact_info p {
+    font-size: 14px; }
+  footer .logo_footer img {
+    width: 180px;
+    height: 80px; }
+  /* about us page */
+  .about_us {
+    padding: 165px 50px 40px 50px; }
+  .about_us .about_us_blue_square h2 {
+    font-size: 25px; }
+  .about_us .about_us_blue_square p {
+    font-size: 14px;
+    line-height: 1.8; }
+  .about_us .about_us_blue_square {
+    padding: 30px 37px; }
+  .logo_contactinfo img {
+    height: 100px;
+    width: 220px;
+    margin: 10px 24px; }
+  .logo_contactinfo .logo_contactinfo_par {
+    padding-top: 40px; }
+  .logo_contactinfo {
+    padding: 115px 120px; }
+  .meet_customers h2 {
+    font-size: 66px; }
+  .meet_customers p {
+    font-size: 20px; }
+  .customers {
+    padding: 140px 20px; }
+  .join_the_family h2 {
+    font-size: 60px;
+    line-height: .3; }
+  /* product page */
+  .product_hero_image h1 {
+    margin: 0 100px; }
+  .baicor_info {
+    padding: 100px 170px; }
+    .baicor_info .products_list {
+      padding: 70px 170px 200px 170px; }
+  .products_list h2 {
+    font-size: 18px; }
+  .bio_si_info {
+    padding: 100px 170px 20px 170px; }
+  .bio_si_info .biologo {
+    padding: 90px 230px 0 230px; }
+  .bio_info {
+    padding: 0px 200px 80px 200px; }
+  .crop_bottom_hr {
+    margin: 0 -40px; }
+  .bio_info h2 {
+    font-size: 20px;
+    padding: 20px 0; }
+  .call_contact p {
+    font-size: 20px; }
+  /* calcium 12 page */
+  .calcium_12_hero_image h1 {
+    margin: 0 300px; }
+  .calcium_12_section {
+    padding: 110px 130px; }
+  .calcium_12_section .cal_logo {
+    margin: 110px 120px; }
+  .calcium_12_section .return_cat {
+    margin: 0 150px; }
+  /* calcium A+ page */
+  .calcium_A_hero_image h1 {
+    margin: 0 300px; }
+  .calcium_A_section {
+    padding: 110px 130px; }
+  .calcium_A_section .cal_logo {
+    margin: 110px 160px; }
+  .calcium_A_section .return_cat {
+    margin: 0 150px; }
+  /* Services page */
+  .services_hero_image h1 {
+    margin: 0 250px; }
+  .services_steps {
+    padding: 165px 130px 40px 130px; }
+  .services_steps img.first_circle.responsive-img.circle {
+    height: 150px;
+    width: 150px; }
+  .services_steps img.second_circle.responsive-img.circle {
+    height: 150px;
+    width: 150px; }
+  .services_steps img.third_circle.responsive-img.circle {
+    height: 150px;
+    width: 150px; }
+  .services_steps p {
+    font-size: 12px;
+    line-height: 1.7;
+    margin: 0 10px; }
+  .services_steps h2 {
+    font-size: 17px;
+    line-height: 1.5; }
+  .ag_laboratory_section h2 {
+    margin: 0 200px; }
+  .ag_lab_info {
+    padding: 165px 170px 40px 170px; }
+  /* news page */
+  .news_hero_image h1 {
+    padding: 500px 0px 0px 0px;
+    font-size: 45px; }
+  .news {
+    padding: 165px 100px 40px 100px; }
+  .news .news_media {
+    font-size: 13px; }
+  .news .calendar {
+    font-size: 13px; }
+  .news_blog {
+    padding: 165px 0px 40px 0px; }
+  .events_blog {
+    padding: 165px 0px 110px 0px; }
+  .news_blog .blog_browse {
+    margin: 0px 290px 100px 290px; }
+  .events_blog .event_calendar_button {
+    margin: 0px 260px 100px 260px; }
+  .news_blog .blog_more_content {
+    margin: 0 0 40px 190px; }
+  /* contact us */
+  .contactus_hero_image h1 {
+    margin: 0px 100px;
+    font-size: 60px; }
+  .contactus_hero_image .contactme {
+    margin: 70px 0px 0 170px; }
+  .contactus_hero_image p {
+    font-size: 19px; }
+  .contactus_info_section h2 {
+    padding: 0 400px 40px 400px; }
+  .contactus_info_section .contactus_para {
+    padding: 0 200px 40px 200px; }
+  .contactus_info_section .padding {
+    padding: 0 105px; }
+  .contact_form .container {
+    width: 95%; }
+  /* customer services */
+  .customer_services_hero_image h1 {
+    font-size: 50px;
+    margin: 0 200px; }
+  .customer_services_return {
+    padding: 110px 130px; }
+  /* terms of use page */
+  .terms_of_use {
+    padding: 110px 130px; }
+  .privacy_services .privacy_info {
+    padding: 60px 140px; }
+  .privacy_services {
+    padding: 110px 130px; }
+  .privacy_services .first_hr {
+    margin: 57px 114px; }
+  /*  news & media category page */
+  .news_blog .cover_image .blog_info .blog_title {
+    font-size: 14px;
+  }
+  .news_media_hero_image h1 {
+   margin: 200px 160px 200px 160px;
+  }
+  .news_blog .cover_image .blog_info .blog_title {
+    font-size: 13px;
+  }
+  .events_hero_image h1{
+    margin: 200px 260px 200px 260px;
+  }
+  .events_blog .event_info .event_title {
+    font-size: 14px;
+  }
+  /* single blog page */
+  .header_blog h1 {
+    color: white;
+    text-transform: uppercase;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 600;
+    font-size: 54px;
+    margin: 350px 260px 200px 260px;
+  }
+  .blog_style {
+    padding: 100px 70px;
+  }
+  .related_post .related_post_info .related_post_title {
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  /* media query 780px */ }
+
+@media screen and (max-width: 780px) {
+  .navbar-fixed nav{
+    top: 0;
+  }
+  nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+    font-size: 40px; }
+  img.logo-brand{
+    height: 100px;
+    width: 100px;
+    bottom: 30px;
+  }
+  .hero_image{
+    background-attachment: scroll;
+  }
+  .hero_image .scroll a {
+    left: 40%; }
+  .info h2 {
+    font-size: 23px; }
+  .info p {
+    font-size: 13px;
+    padding: 0px 30px; }
+  .repair_container .repair_background img {
+    height: 381px; }
+  .repair_container .repair_background h2 {
+    font-size: 21px; }
+  .repair_container .repair_background p {
+    font-size: 12px; }
+  .repair_container .repair_background {
+    padding: 60px 30px; }
+  .repair_container .repair_background a {
+    font-size: 13px; }
+  .repair_container .soil img {
+    height: 381px; }
+  .clean_clear{
+    background-attachment: scroll;
+  }
+  .clean_clear h2 {
+    font-size: 50px; }
+  .clean_clear p {
+    font-size: 18px; }
+  .clean_clear .services {
+    font-size: 17px; }
+  footer .footer_container .contact_info p {
+    font-size: 12px; }
+  footer .footer_container .contact {
+    font-size: 13px;
+    padding: 15px; }
+  hr {
+    margin: 0px 130px; }
+  /* about us page */
+  .about_hero_image{
+    background-attachment: scroll;
+  }
+  .about_us .about_us_blue_square {
+    height: 300px;
+    padding: 30px 37px;
+    margin-bottom: 120px; }
+  .about_us .about_us_team h2 {
+    padding: 40px 0 25px 0; }
+  .logo_contactinfo {
+    padding: 115px 70px; }
+  .logo_contactinfo img {
+    margin: 10px 24px 0 161px; }
+  .logo_contactinfo .logo_contactinfo_par {
+    padding: 40px 0 0 172px; }
+  .meet_customers h2 {
+    font-size: 45px; }
+  .meet_customers p {
+    font-size: 17px; }
+  .meet_customers {
+    padding: 110px 0px; }
+  .join_the_family{
+    background-attachment: scroll;
+  }
+  .customers img {
+    height: 180px; }
+
+  /* products page */
+  .product_hero_image{
+    background-attachment: scroll;
+  }
+  .product_hero_image h1 {
+    margin: 0 40px;
+    font-size: 40px; }
+  .product_hero_image .baicor-button {
+    font-size: 15px; }
+  .product_hero_image .bio_si-button {
+    font-size: 15px; }
+  .product_hero_image .scroll a {
+    left: 40%; }
+  .baicor_info .baicorlc_logo {
+    padding: 90px 100px 0 100px; }
+  .bio_si_info .biologo {
+    padding: 90px 120px 0 120px; }
+  .baicor_info {
+    padding: 100px 130px; }
+  .products_list h2 {
+    font-size: 27px; }
+  .products_list ul li a {
+    font-size: 14px;
+    line-height: 2.5; }
+  .bio_si_info {
+    padding: 100px 130px 20px 130px; }
+  .bio_si_info .biologo {
+    padding: 90px 120px 0 160px; }
+  .bio_info h2 {
+    font-size: 27px; }
+  .bio_info ul li a {
+    font-size: 14px; }
+  .crop_bottom_hr {
+    margin: 0 -80px; }
+  .call_contact p {
+    font-size: 16px; }
+  .call_contact .contactus_button {
+    font-size: 15px; }
+  /* Calcium 12 */
+  .calcium_12_hero_image h1 {
+    margin: 0 200px;
+    font-size: 40px; }
+  .calcium_12_section .cal_logo {
+    margin: 110px 50px; }
+  .calcium_12_section .return_cat {
+    margin: 0 90px; }
+  /* calcium A+ */
+  .calcium_A_hero_image h1 {
+    margin: 0 200px;
+    font-size: 40px; }
+  .calcium_A_section .cal_logo {
+    margin: 110px 100px; }
+  .calcium_A_section .return_cat {
+    margin: 0 90px; }
+  /* services page */
+  .services_hero_image{
+    background-attachment: scroll;
+  }
+  .services_hero_image h1 {
+    margin: 0 150px; }
+  .services_hero_image .scroll a {
+    left: 40%; }
+  .services_steps h2 {
+    font-size: 19px;
+    line-height: 1.5; }
+  .services_steps p {
+    font-size: 14px;
+    line-height: 1.5;
+    padding-bottom: 45px; }
+    .ag_laboratory_section{
+      background-attachment: scroll;
+    }
+  .ag_laboratory_section h2 {
+    padding-top: 150px; }
+  .ag_lab_info {
+    padding: 165px 130px 40px 130px; }
+  /* news section */
+  .news_hero_image{
+    background-attachment: scroll;
+  }
+  .news_hero_image h1 {
+    padding: 500px 0px 0px 0px;
+    font-size: 35px; }
+  .news .news_media {
+    margin: 20px 10px 100px 0px; }
+  .news_banner{
+    background-attachment: scroll;
+  }
+  .news_banner h2 {
+    font-size: 65px; }
+  .news .news_media {
+    font-size: 10px; }
+  .news .calendar {
+    font-size: 10px;
+    margin: 20px 31px 100px 0px; }
+  .news_blog .blog_browse {
+    margin: 0px 230px 100px 290px; }
+  .events_blog .event_calendar_button {
+    margin: 0px 210px 100px 240px; }
+  .upcoming_events h2 {
+    font-size: 45px;
+    padding-top: 40px; }
+  .upcoming_events p {
+    font-size: 18px; }
+  /*contact us page */
+  .contactus_hero_image h1 {
+    margin: 1px 60px;
+    font-size: 40px; }
+  .contactus_hero_image .contactme {
+    margin: 70px 0px 0 110px;
+    font-size: 15px; }
+  .contactus_info_section h2 {
+    padding: 0px 174px 40px 170px; }
+  .contactus_info_section .contactus_para {
+    padding: 0 170px 40px 170px; }
+  .contact_form h2 {
+    font-size: 20px; }
+  .contact_form .form {
+    margin: 0 150px; }
+  /* customer services page */
+  /* terms of use */
+  /* statment of privacy */
+  .customer_services_hero_image h1 {
+    margin: 0 100px; }
+  .privacy_services .privacy_info {
+    padding: 61px 70px; }
+  .privacy_services .first_hr {
+    margin: 57px 40px; }
+
+  /* news & events blog category page */
+  .news_media_hero_image h1 {
+    margin: 200px 100px 200px 100px;
+    font-size: 50px;
+  }
+  .news_blog .cover_image img {
+    height: 300px;
+  }
+  .events_blog .cover_image img {
+    height: 300px;
+  }
+  .events_hero_image h1 {
+    margin: 200px 100px 200px 100px;
+  }
+  .events_blog .event_info .event_title {
+    font-size: 19px;
+  }
+  /* blog page */
+  .header_blog h1 {
+    margin: 350px 120px 200px 120px;
+  }
+
+  }
+
+/* media query 425px */
+@media screen and (max-width: 450px) {
+  .logo-brand {
+    margin-left: 70px; }
+  .hero_image h1 {
+    padding: 400px 0 100px 0;
+    font-size: 40px; }
+  .hero_image .scroll a {
+    left: 30%; }
+  .repair_container {
+    padding: 100px 60px 430px 60px; }
+  .repair_container .soil img {
+    top: 73px;
+    left: -50px; }
+  .repair_container .soil img {
+    height: 321px; }
+  .col.l4.m4.s12.logo_footer {
+    padding: 37px 0px; }
+  footer .footer_container {
+    padding: 123px 80px 0px 80px; }
+  footer .copyright {
+    font-size: 12px;
+    padding: 30px 30px; }
+  hr {
+    margin: 0px 77px; }
+  /* about us */
+  .about_hero_image h1 {
+    font-size: 45px; }
+  .about_hero_image .scroll a {
+    left: 35%; }
+  .about_us .about_us_blue_square {
+    height: 500px;
+    margin-bottom: 120px; }
+  .customers img {
+    height: 100%;
+    width: 100%; }
+  .logo_contactinfo img {
+    margin: 10px 24px 0 30px; }
+  .logo_contactinfo .logo_contactinfo_par {
+    padding: 40px 0 0 40px; }
+  .join_the_family h2 {
+    font-size: 40px;
+    line-height: 0; }
+  /* products page */
+  .product_hero_image .scroll a {
+    left: 30%; }
+  .baicor h2 {
+    font-size: 43px; }
+  .baicor_info {
+    padding: 100px 30px; }
+  .baicor_info .baicorlc_logo {
+    padding: 90px 100px 0 90px;
+    width: 390px; }
+  .products_list {
+    padding: 70px 100px 200px 100px; }
+  .bio_si h2 {
+    font-size: 43px;
+    font-weight: 700; }
+  .baicor_info p {
+    font-size: 13px; }
+  .bio_si_info {
+    padding: 100px 30px 20px 30px; }
+  .bio_si_info .biologo {
+    padding: 90px 100px 0 120px;
+    width: 340px; }
+  .bio_info {
+    padding: 0px 100px 80px 100px; }
+  .bio_si_info p {
+    font-size: 13px; }
+  /* calcium 12 page */
+  .calcium_12_hero_image h1 {
+    margin: 0 120px;
+    font-size: 30px; }
+  .calcium_12_section {
+    padding: 110px 100px; }
+  .calcium_12_section .cal_logo {
+    margin: 110px 0px; }
+  .calcium_12_section .return_cat {
+    margin: 0 40px; }
+  .calcium_12_section .cal_logo {
+    height: 50px; }
+  .calcium_12_section .return_cat {
+    padding: 15px 15px;
+    font-size: 14px;
+    margin: 0 20px; }
+  /* calcium A+ */
+  .calcium_A_hero_image h1 {
+    margin: 0 120px;
+    font-size: 30px; }
+  .calcium_A_section {
+    padding: 110px 100px; }
+  .calcium_A_section .cal_logo {
+    height: 100px;
+    margin: 110px 40px; }
+  .calcium_A_section .return_cat {
+    padding: 15px 15px;
+    font-size: 14px;
+    margin: 0 20px; }
+  /*services page */
+  .services_hero_image h1 {
+    margin: 0 90px; }
+  .services_steps {
+    padding: 165px 60px 40px 60px; }
+  .ag_lab_info {
+    padding: 165px 40px 40px 40px; }
+  .ag_laboratory_section h2 {
+    margin: 0 50px;
+    font-size: 35px; }
+  .ag_lab_info p {
+    font-size: 13px;
+    padding: 10px; }
+  .ag_website_link h2 {
+    font-size: 17px; }
+  .services_hero_image .scroll a {
+    left: 30%; }
+  .ag_lab_info {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1; }
+  /* news page */
+  .news {
+    padding: 165px 40px 40px 40px; }
+  .news_blog .blog_browse {
+    margin: 0px 30px 100px 90px; }
+  .events_blog .event_calendar_button {
+    margin: 0px 10px 100px 40px; }
+  .news_hero_image .scroll a {
+    left: 30%; }
+  .news p {
+    font-size: 13px;
+    padding: 0 20px 70px 20px; }
+  .news .calendar {
+    font-size: 10px; }
+  .col.l6.m6.s12.news_button {
+    padding: 33px; }
+  .news .calendar {
+    margin: 20px 31px 100px 22px; }
+  .news_banner h2 {
+    font-size: 56px; }
+  .news_banner p {
+    font-size: 20px;
+    padding: 0 30px; }
+  .news_blog .blog_more_content {
+    margin: 0 0 40px 0px;
+    text-align: center;
+    font-size: 20px; }
+  .news_blog .blog_browse {
+    margin: 2px 30px 100px 123px; }
+  .upcoming_events h2 {
+    font-size: 34px;
+    padding-top: 8px; }
+  .upcoming_events p {
+    font-size: 17px;
+    padding: 13px 20px; }
+  .events_blog .event_calendar_button {
+    margin: 0px 10px 100px 105px; }
+  /* contact us */
+  .contactus_hero_image p {
+    font-size: 19px;
+    margin: 43px 0px 0px 77px; }
+  .contactus_info_section .contactus_para {
+    padding: 0 30px 40px 30px; }
+  .contactus_info_section h2 {
+    padding: 0px 30px 40px 30px; }
+  .contact_form .form {
+    margin: 0 50px; }
+  /* customer services */
+  .customer_services_hero_image h1 {
+    font-size: 37px; }
+  .customer_services_return {
+    padding: 110px 57px; }
+  /* terms of use */
+  .terms_of_use {
+    padding: 110px 44px;
+    /*privacy page */ }
+  .privacy_services {
+    padding: 110px 41px; }
+  .privacy_services .privacy_info {
+    padding: 62px 20px; }
+
+    /* blog single page */
+  .header_blog h1 {
+    margin: 351px 30px 200px 30px;
+    font-size: 37px;
+  }
+}
+
+/* media query 390 */
+@media screen and (max-width: 390px) {
+  .col.l6.m6.s12.repair_background{
+    padding: 26px;
+  }
+  .hero_image h1{
+    padding: 150px 0 100px 0;
+    font-size: 40px;
+  }
+
+  .clean_clear p {
+    font-size: 17px;
+    margin: 0 30px; }
+  .logo-brand {
+    margin-left: 110px; }
+  /* about us page */
+  .about_hero_image h1{
+    padding: 150px 0 100px 0;
+  }
+  .logo_contactinfo {
+    padding: 115px 30px; }
+    .about_us .about_us_blue_square {
+      height: 619px;
+      /* margin-bottom: 110px; */
+  }
+  /* products page */
+  .product_hero_image h1{
+    font-size: 20px;
+    padding: 150px 0 30px 0;
+  }
+  .baicor_info .baicorlc_logo {
+    padding: 90px 0 0 0;
+    width: 167px;
+    margin: 0 0 0 76px; }
+  .bio_si_info .biologo {
+    padding: 90px 50px 0 52px;
+    width: 274px;
+    margin: 0 0 0 24px; }
+  /* calcuim page */
+  .calcium_12_section {
+    padding: 110px 72px; }
+  .calcium_12_section .return_cat {
+    font-size: 14px; }
+  /* calcium A+ */
+  .calcium_A_section {
+    padding: 110px 72px; }
+  .calcium_A_section .return_cat {
+    font-size: 14px; }
+  .calcium_A_section .cal_logo {
+    height: 100px;
+    margin: 110px 21px; }
+  /* services page */
+  .services_hero_image h1{
+    font-size: 30px;
+    margin: 0 30px;
+    padding-top: 150px;
+  }
+  .ag_website_link h2 {
+    font-size: 14px; }
+  .ag_website_link .visit_button {
+    font-size: 13px; }
+  /* news page */
+  .news_hero_image h1{
+    padding: 150px 0 100px 0;
+  }
+  .news_blog .cover_image .blog_info .blog_title{
+    font-size: 15px;
+  }
+  .events_blog .event_calendar_button {
+    margin: 0px 10px 100px 88px; }
+  .news_blog .blog_browse {
+    margin: 2px 30px 100px 102px; }
+  /* contact us */
+  .contact_form h2 {
+    font-size: 18px;
+    margin: 0 30px; }
+  /* customer services */
+  .customer_services_hero_image h1 {
+    margin: 0 74px; }
+  .events_hero_image h1 {
+    margin: 200px 60px 200px 60px;
+    }
+  /* blog single page */
+  .header_blog h1 {
+    font-size: 32px;
+  }
+  .blog_style {
+    padding: 100px 63px;
+  }
+  .blog_style p {
+    font-size: 13px;
+  }
+
+}
+
+/* media query 340 */
+@media screen and (max-width: 340px) {
+  .hero_image h1 {
+    font-size: 30px;
+    margin: 0 30px; }
+  .hero_image .scroll a {
+    left: 25%; }
+  .repair_container {
+    padding: 100px 30px 450px 30px; }
+  footer {
+    height: 785px; }
+  footer .footer_container {
+    padding: 123px 30px 0px 30px; }
+  hr {
+    margin: 0px 50px; }
+  .logo-brand {
+    margin-left: 100px;
+    height: 40px; }
+  nav .button-collapse {
+    float: left;
+    position: relative;
+    z-index: 1;
+    height: 56px;
+    position: relative;
+    top: 0;
+    right: 30px; }
+  /* about page */
+  .logo_contactinfo {
+    padding: 117px 10px; }
+  .meet_customers h2 {
+    font-size: 30px;
+    line-height: .7; }
+  /* products page */
+  .baicor_info .baicorlc_logo {
+    padding: 90px 0 0 0;
+    width: 167px;
+    margin: 0 0 0 48px; }
+  .products_list {
+    padding: 70px 60px 200px 60px; }
+  .bio_si_info .biologo {
+    padding: 90px 50px 0 75px;
+    width: 274px;
+    margin: 0 0 0 -16px; }
+  .bio_info h2 {
+    font-size: 19px; }
+  .bio_info ul li a {
+    font-size: 13px; }
+  .products_list h2 {
+    font-size: 19px; }
+  .products_list ul li a {
+    font-size: 13px; }
+  /* calicum 12 page */
+  .calcium_12_hero_image h1 {
+    margin: 0 100px;
+    font-size: 30px; }
+  .calcium_12_section .cal_logo {
+    height: 40px; }
+  .calcium_12_section .cal_logo {
+    margin: 70px 0px; }
+  .calcium_12_section {
+    padding: 110px 40px; }
+  .calcium_12_section .cal_logo {
+    margin: 70px 0px 70px 10px; }
+  .calcium_A_hero_image h1 {
+    margin: 0px 100px;
+    font-size: 30px; }
+  .calcium_A_section {
+    padding: 110px 40px; }
+  .calcium_A_section .cal_logo {
+    height: 100px;
+    margin: 110px 51px; }
+  .services_hero_image h1 {
+    margin: 0 40px; }
+  .services_steps .services_contactus_button {
+    font-size: 13px; }
+  .ag_laboratory_section h2 {
+    font-size: 25px; }
+  .ag_laboratory_section p {
+    font-size: 18px; }
+  /* news page */
+  .news {
+    padding: 162px 10px 40px 10px; }
+  .news_blog .blog_more_content {
+    margin: 0 0 40px 0px;
+    text-align: center;
+    font-size: 17px; }
+  .news_blog .blog_browse {
+    margin: 3px 30px 100px 80px; }
+  .events_blog .event_calendar_button {
+    margin: 0px 10px 100px 60px; }
+  .events_blog .full_line_up {
+    font-size: 20px; }
+  /* contact us */
+  .contactus_hero_image h1 {
+    margin: 0px 60px;
+    font-size: 30px;
+    padding: 200px 0 40px 0; }
+  .contactus_hero_image .contactme {
+    margin: 70px 0px 0 73px;
+    font-size: 15px; }
+  .contactus_hero_image p {
+    font-size: 17px;
+    margin: 41px 0px 0px 56px; }
+  .contactus_info_section .padding {
+    padding: 0px 20px; }
+  .contact_form h2 {
+    font-size: 18px;
+    margin: 0 30px;
+    line-height: 1.4; }
+  .contact_form {
+    padding: 0 5px 90px 5px; }
+  /* customer services page*/
+  .customer_services_hero_image h1 {
+    margin: 0 50px; }
+  /* terms of use page */
+  /* privacy page */
+  /* blog single page */
+  .header_blog h1 {
+    font-size: 27px;
+  }
+  .blog_style {
+    padding: 100px 4px;
+  }
+
+}
